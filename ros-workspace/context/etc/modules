@@ -1,0 +1,7 @@
+# Enable kernel modules...
+
+# Camera: bcm2835 is the driver, v4l2 is Video 4 Linux 2
+bcm2835-v4l2
+
+# I2C:
+i2-dev

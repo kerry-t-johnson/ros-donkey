@@ -1,0 +1,5 @@
+This (empty) directory exists to be mounted into the build container
+to retain build artifacts on your development machine.
+
+No files within this directory should be checked in.
+

@@ -1,0 +1,4 @@
+# Ignore everything in the build directory
+ros-workspace/build/*
+# Except the README
+!ros-workspace/build/README

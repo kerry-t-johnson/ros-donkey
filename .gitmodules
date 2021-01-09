@@ -1,0 +1,9 @@
+[submodule "ros-workspace/src/i2c_pwm"]
+	path = ros-workspace/src/i2c_pwm
+	url = git@github.com:kerry-t-johnson/i2c_pwm.git
+[submodule "ros-workspace/src/servo_mgr"]
+	path = ros-workspace/src/servo_mgr
+	url = git@github.com:kerry-t-johnson/servo_mgr.git
+[submodule "ros2-web-bridge"]
+	path = ros2-web-bridge
+	url = git@github.com:kerry-t-johnson/ros2-web-bridge.git

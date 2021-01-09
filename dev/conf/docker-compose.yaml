@@ -1,0 +1,28 @@
+version: "3.7"
+services:
+  ros-donkey-dev:
+    image: my/ros-donkey:development
+    container_name: ros-donkey-dev
+    command:  /bin/bash
+    tty: true
+    volumes:
+      - type: bind
+        source: ${ROS_DONKEY_DEV_PATH}/ros-workspace/src
+        target: /home/ros-donkey/workspace/src
+      - type: bind
+        source: ${ROS_DONKEY_DEV_PATH}/ros-workspace/build
+        target: /home/ros-donkey/workspace/build
+    networks:
+      - ros2-backend
+
+  ros2-web-bridge:
+    image: my/ros2-web-bridge:0.3.0
+    container_name: ros2-web-bridge
+    ports:
+      - "9090:9090"
+    networks:
+      - ros2-backend
+      
+    
+networks:
+  ros2-backend:

@@ -1,0 +1,9 @@
+#! /bin/bash
+
+if [[ -z "${ROS_DEVICE_IP}" ]]; then
+    echo "ERROR: ROS_DEVICE_IP is not set"
+    exit -1
+fi
+
+balena push ${ROS_DEVICE_IP}
+

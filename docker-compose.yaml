@@ -1,0 +1,14 @@
+version: "2.1"
+services:
+  ros-donkey:
+    build:
+      context: ./ros-workspace
+    command: [ "ros2", "launch", "servo_mgr", "servo_mgr_launch.py" ]
+    privileged: true
+    restart: always
+    network_mode: host
+  ros-web-bridge:
+    build:
+      context: ./ros2-web-bridge
+    restart: always
+    network_mode: host
