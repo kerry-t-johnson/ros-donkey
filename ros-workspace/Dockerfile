@@ -21,7 +21,10 @@ RUN ln -sf /usr/share/zoneinfo/America/Denver   /etc/localtime  &&  \
                         i2c-tools                                   \
                         python3-numpy                               \
                         python3-pip                                 \
-                        tzdata
+                        python3-smbus                               \
+                        tzdata                                  &&  \
+    pip3  install blessed                                           \
+                  RPLCD
 
 # Vision-stuff
 #- RUN apt-get install -y  libatlas3-base                              \

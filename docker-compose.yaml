@@ -3,7 +3,7 @@ services:
   ros-donkey:
     build:
       context: ./ros-workspace
-    command: [ "ros2", "launch", "servo_mgr", "servo_mgr_launch.py" ]
+    command: [ "ros2", "launch", "car_composite", "donkey_car.launch.py" ]
     privileged: true
     restart: always
     network_mode: host

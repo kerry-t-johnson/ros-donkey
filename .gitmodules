@@ -7,3 +7,6 @@
 [submodule "ros2-web-bridge"]
 	path = ros2-web-bridge
 	url = git@github.com:kerry-t-johnson/ros2-web-bridge.git
+[submodule "ros-workspace/src/car_composite"]
+	path = ros-workspace/src/car_composite
+	url = git@github.com:kerry-t-johnson/car-composite.git
